@@ -1,0 +1,23 @@
+.main-nav {
+  width: 80%;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav__item {
+  padding: 7px 0 7px 34px;
+}
+
+.main-nav__link {
+  @include font(16px, 500, 20px);
+  color: $color-header-text;
+  text-align: right;
+}
