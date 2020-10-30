@@ -1,13 +1,22 @@
 header {
+  height: auto;
+  min-height: 650px;
+
   background-color: $color-header-bg;
   background-image: url("../img/main-banner-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/main-banner-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
+    min-height: 638px;
+
     background-image: url("../img/main-banner-tablet@1x.jpg");
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-banner-tablet@2x.jpg");
@@ -15,10 +24,76 @@ header {
   }
 
   @media (max-width: $mobile-width) {
+    min-height: 500px;
+  }
+
+  @media (max-width: $mobile-width-only) {
     background-image: url("../img/main-banner-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-banner-mobile@2x.jpg");
     }
+  }
+}
+
+.header__top {
+  margin-bottom: 192px;
+  padding-top: 34px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 211px;
+    padding-top: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 130px;
+    padding-top: 20px;
+  }
+}
+
+.header__title {
+  padding-left: 125px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+  }
+}
+
+.header__title h1 {
+  margin: 0;
+  margin-bottom: 13px;
+
+  color: $color-header-text;
+
+  @include font(54px, 700, 66px);
+
+  @media (max-width: $tablet-width) {
+    @include font(50px, 700, 61px);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+
+    @include font(36px, 700, 45px);
+  }
+}
+
+.header__title p {
+  margin: 0;
+
+  color: $color-header-text;
+
+  @include font(20px, 400, 24px);
+
+  @media (max-width: $tablet-width) {
+    @include font(18px, 400, 22px);
+  }
+
+  @media (max-width: $mobile-width) {
+    @include font(16px, 400, 22px);
   }
 }
