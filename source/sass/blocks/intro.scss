@@ -1,0 +1,108 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  min-height: 541px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 464px;
+    padding-top: 91px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+    padding-top: 57px;
+    padding-bottom: 38px;
+  }
+}
+
+.intro__text {
+  width: 50%;
+  padding-top: 55px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.intro__image {
+  width: 560px;
+
+  background-image: url("../img/penguins-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/penguins-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+
+    background-image: url("../img/penguins-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/penguins-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    min-height: 186px;
+
+    background-image: url("../img/penguins-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 290px 186px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/penguins-mobile@2x.jpg");
+    }
+  }
+}
+
+.intro h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  color: $color-main-text;
+
+  @include font(28px, 600, 42px);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+    padding-right: 37px;
+
+    @include font(26px, 600, 36px);
+  }
+
+  @media (max-width: $mobile-width) {
+    @include font(24px, 600, 34px);
+  }
+}
+
+.intro p {
+  margin: 0;
+  padding-right: 45px;
+
+  color: $color-main-text;
+
+  @include font(16px, 400, 24px);
+
+  @media (max-width: $tablet-width) {
+    padding-right: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+  }
+}
