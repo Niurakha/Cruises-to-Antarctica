@@ -8,12 +8,13 @@
   @media (max-width: $tablet-width) {
     min-height: 464px;
     padding-top: 91px;
+    padding-bottom: 92px;
   }
 
   @media (max-width: $mobile-width) {
     flex-wrap: wrap;
     padding-top: 57px;
-    padding-bottom: 38px;
+    padding-bottom: 65px;
   }
 }
 
