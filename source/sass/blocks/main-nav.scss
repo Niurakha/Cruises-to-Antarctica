@@ -58,6 +58,13 @@
 
   @include font(16px, 500, 20px);
 
+  transition: border-bottom 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-header-text;
+  }
+
   @media (max-width: $tablet-width) {
     text-align: right;
 
