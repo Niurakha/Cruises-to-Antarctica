@@ -1,0 +1,64 @@
+.booking {
+  min-height: 555px;
+  padding-top: 50px;
+
+  background-color: $color-block-bg;
+  background-image: url("../img/booking-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 163px;
+}
+
+.booking__description h2 {
+  margin: 0;
+
+  @include font(40px, 700, 60px);
+}
+
+.booking__description p {
+  margin: 0;
+
+  @include font(18px, 400, 27px);
+}
+
+.booking__form {
+  min-width: 403px;
+  padding: 50px;
+
+  background-color: $color-cruise-card-bg;
+}
+
+.booking__form fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.booking__form h3 {
+  margin: 0;
+  margin-bottom: 35px;
+
+  color: $color-cruise-card-title;
+
+  @include font(18px, 500, 27px);
+}
+
+.booking__form ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.booking__form input {
+  min-width: 303px;
+  margin-bottom: 20px;
+  padding: 16px;
+}
