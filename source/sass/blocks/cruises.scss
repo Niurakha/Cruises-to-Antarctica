@@ -1,13 +1,15 @@
 .cruises {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 
   @media (max-width: $tablet-width) {
     padding-top: 116px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 91px;
+    padding-bottom: 35px;
   }
 }
 
@@ -16,7 +18,6 @@
   margin-bottom: 49px;
 
   text-align: center;
-  color: $color-main-text;
 
   @include font(28px, 600, 42px);
 
@@ -87,7 +88,7 @@
 
   margin: 0;
 
-  color: $color-cruise-card-title;
+  color: $color-primary-light;
 
   @include font(18px, 500, 27px);
 
@@ -112,7 +113,7 @@
   min-height: 386px;
   padding: 28px 25px 35px;
 
-  background-color: $color-cruise-card-bg;
+  background-color: $color-primary-dark;
 
   @media (max-width: $tablet-width) {
     padding: 28px 35px 35px;
@@ -127,7 +128,7 @@
   margin: 0;
   margin-bottom: 13px;
 
-  color: $color-cruise-card-title;
+  color: $color-primary-light;
 
   @include font(18px, 500, 27px);
 }
@@ -144,7 +145,7 @@
 .cruises__description-item h4 {
   margin: 0;
 
-  color: $color-cruise-card-title;
+  color: $color-primary-light;
 
   @include font(14px, 500, 20px);
 }
@@ -153,31 +154,15 @@
   margin: 0;
   margin-bottom: 12px;
 
-  color: $color-cruise-card-text;
+  color: $color-secondary-light;
 
   @include font(14px, 400, 20px);
 }
 
-.cruises__description a {
-  display: block;
+.cruises__description-link {
   padding: 10px 47px 9px;
 
-  color: $color-main-text;
-
-  background-color: $color-main-bg;
-
-  transition: all 0.3s ease;
-
   @include font(14px, 600, 21px);
-
-  &:hover,
-  &:focus {
-
-    color: $color-cruise-card-text;
-
-    background-color: $color-cruise-card-bg;
-    box-shadow: inset 1px 1px $color-cruise-card-text, inset -1px -1px $color-cruise-card-text;
-  }
 
   @media (max-width: $tablet-width) {
     padding: 10px 60px 9px;

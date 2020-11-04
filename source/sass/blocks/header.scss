@@ -67,7 +67,7 @@ header {
   margin: 0;
   margin-bottom: 13px;
 
-  color: $color-header-text;
+  color: $color-primary-light;
 
   @include font(54px, 700, 66px);
 
@@ -85,7 +85,7 @@ header {
 .header__title p {
   margin: 0;
 
-  color: $color-header-text;
+  color: $color-primary-light;
 
   @include font(20px, 400, 24px);
 

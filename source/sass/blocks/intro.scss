@@ -75,8 +75,6 @@
   margin: 0;
   margin-bottom: 25px;
 
-  color: $color-main-text;
-
   @include font(28px, 600, 42px);
 
   @media (max-width: $tablet-width) {
@@ -94,8 +92,6 @@
 .intro p {
   margin: 0;
   padding-right: 45px;
-
-  color: $color-main-text;
 
   @include font(16px, 400, 24px);
 

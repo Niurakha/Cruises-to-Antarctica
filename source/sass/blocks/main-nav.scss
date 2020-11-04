@@ -54,7 +54,7 @@
 }
 
 .main-nav__link {
-  color: $color-header-text;
+  color: $color-primary-light;
 
   @include font(16px, 500, 20px);
 
@@ -62,7 +62,7 @@
 
   &:hover,
   &:focus {
-    border-bottom: 1px solid $color-header-text;
+    border-bottom: 1px solid $color-primary-light;
   }
 
   @media (max-width: $tablet-width) {
@@ -72,7 +72,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    color: $color-main-text;
+    color: $color-primary-dark;
 
     @include font(18px, 500, 22px);
   }

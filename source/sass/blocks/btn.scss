@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+
+  color: $color-primary-dark;
+
+  background-color: $color-primary-light;
+
+  transition: all 0.3s ease;
+
+  @include font(14px, 600, 21px);
+
+  &:hover,
+  &:focus {
+    color: $color-primary-light;
+
+    background-color: $color-primary-dark;
+    box-shadow: inset 1px 1px $color-primary-light, inset -1px -1px $color-primary-light;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 60px 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 10px 52px 9px;
+  }
+}

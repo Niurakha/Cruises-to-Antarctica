@@ -21,18 +21,18 @@
 
         background-image: url("../img/icon-open.svg");
 
-        fill: $color-header-icon;
+        fill: $color-primary-light;
       }
     }
 
     &--opened {
       margin-bottom: 5px;
 
-      background-color: $color-main-bg;
+      background-color: $color-primary-light;
 
 
       .header-top__logo-svg {
-        fill: $color-main-icon;
+        fill: $color-primary-dark;
       }
 
       .header-top__toggle {
@@ -42,7 +42,7 @@
 
         background-image: url("../img/icon-close.svg");
 
-        fill: $color-main-icon;
+        fill: $color-primary-dark;
       }
     }
   }
@@ -60,7 +60,7 @@
   width: 70px;
   height: 40px;
 
-  fill: $color-header-icon;
+  fill: $color-primary-light;
 
   @media (max-width: $tablet-width) {
     width: 38px;
