@@ -448,7 +448,7 @@
           <p>Забронируйте тур за&nbsp;3‑6&nbsp;месяцев до&nbsp;даты&nbsp;выезда и&nbsp;сэкономьте&nbsp;до&nbsp;50%</p>
         </div>
         <div class="booking__feedback">
-          <form class="form" action="#" method="POST">
+          <form class=" booking__feedback-form form" action="#" method="POST">
             <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</h3>
             <ul>
               <li class="form__field">
@@ -476,6 +476,32 @@
             <button class="form__btn btn" type="submit">Оставить заявку</button>
           </form>
         </div>
+      </div>
+    </section>
+    <section class="contacts container" id="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__map">
+        <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A356553a58019fc9e1177ca2bcdba691f6982ab320a30ca4aa89cfadcb208ff2c&amp;source=constructor" width="560" height="306"></iframe>
+        <picture>
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset=" img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+
+          <!-- 1х: 290px; 2x: 580px -->
+          <source type="image/jpeg" media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source type="image/jpeg" media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img src="img/map-desktop@1x.jpg" srcset="img/map-desktop@2x.jpg 2x" width="560" height="306" alt="Офис находится по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург" title="Офис находится по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">
+        </picture>
+      </div>
+      <div class="contacts__info">
+        <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+        <address>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</address>
+        <a href="tel:+78002000000">8-800-200-00-00</a>
       </div>
     </section>
   </main>

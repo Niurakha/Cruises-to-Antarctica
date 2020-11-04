@@ -56,9 +56,9 @@
 .main-nav__link {
   color: $color-primary-light;
 
-  @include font(16px, 500, 20px);
-
   transition: border-bottom 0.3s ease;
+
+  @include font(16px, 500, 20px);
 
   &:hover,
   &:focus {
@@ -75,5 +75,10 @@
     color: $color-primary-dark;
 
     @include font(18px, 500, 22px);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $color-primary-dark;
+    }
   }
 }
