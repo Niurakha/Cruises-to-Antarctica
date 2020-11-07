@@ -47,11 +47,23 @@
   }
 }
 
+.header-top__logo-link {
+  @media (max-width: $mobile-width) {
+    align-self: flex-start;
+  }
+}
+
 .header-top__nav {
   width: 80%;
+
+  @media (max-width: $mobile-width) {
+    align-self: flex-start;
+  }
 }
 
 .header-top__list {
+  padding-left: 0;
+
   @media (max-width: $mobile-width) {
     width: 100%;
     min-height: 160px;
@@ -71,6 +83,12 @@
   }
 }
 
+.header-top__item--destinations {
+  @media (max-width: $mobile-width) {
+    order: -1;
+  }
+}
+
 .header-top__item .header-top__link {
   @include font(16px, 500, 20px);
 
@@ -84,6 +102,7 @@
     @include font(18px, 500, 22px);
   }
 }
+
 
 .header-top--nojs {
   @media (max-width: $mobile-width) {

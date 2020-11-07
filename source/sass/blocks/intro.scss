@@ -35,39 +35,35 @@
 .intro__image {
   width: 560px;
 
-  background-image: url("../img/penguins-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/penguins-desktop@2x.jpg");
-  }
-
   @media (max-width: $tablet-width) {
+    position: relative;
+
     width: 324px;
-
-    background-image: url("../img/penguins-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 100%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/penguins-tablet@2x.jpg");
-    }
+    height: 264px;
+    margin-top: 9px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    min-height: 186px;
+    width: 290px;
+    height: 186px;
+    margin-top: 0;
+  }
+}
 
-    background-image: url("../img/penguins-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 290px 186px;
+.intro__image img {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/penguins-mobile@2x.jpg");
-    }
+    width: auto;
+    height: 264px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 186px;
   }
 }
 

@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  height: 207px;
   min-height: 207px;
   margin: 0;
   margin-bottom: 30px;
@@ -25,9 +26,15 @@
   list-style: none;
 
   @media (max-width: $mobile-width) {
+    height: 213px;
     min-height: 213px;
     margin-bottom: 27px;
   }
+}
+
+.form__field {
+  align-self: center;
+  width: 100%;
 }
 
 .form input {

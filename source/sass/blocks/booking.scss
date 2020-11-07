@@ -108,6 +108,7 @@
 
 .booking__feedback {
   max-width: 403px;
+  height: 455px;
   min-height: 455px;
   padding: 44px 50px;
 
@@ -115,6 +116,7 @@
 
   @media (max-width: $mobile-width) {
     max-width: 290px;
+    height: 460px;
     min-height: 460px;
     padding: 36px 30px 30px;
   }
