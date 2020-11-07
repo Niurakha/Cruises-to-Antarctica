@@ -83,12 +83,6 @@
   }
 }
 
-.header-top__item--destinations {
-  @media (max-width: $mobile-width) {
-    order: -1;
-  }
-}
-
 .header-top__item .header-top__link {
   @include font(16px, 500, 20px);
 
