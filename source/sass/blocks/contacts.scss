@@ -135,7 +135,14 @@
 
   color: $color-primary-dark;
 
+  transition: border-bottom 0.3s ease;
+
   @include font(16px, 400, 24px);
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-primary-dark;
+  }
 
   &::before {
     content: " ";

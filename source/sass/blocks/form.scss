@@ -43,6 +43,7 @@
 
   background-color: $color-primary-light;
   border: none;
+  border-radius: 0;
 
   @include font(14px, 400, 21px);
 
